@@ -7,7 +7,7 @@
 ### 방식
 1. issue에 금주의 문제를 추가합니다.
 2. main branch에서 새 branch를 생성하여 문제를 푼 후에 pull request를 올립니다.
-  - commit 형식: Add 문제번호 문제명 #이슈번호
+  - commit 형식: [#이슈번호] 문제번호 문제명
   - pr 제목형식: '[이름] 문제번호 문제명')
 4. 화요일~수요일에 pull request에 코드 리뷰를 작성합니다.(리뷰어는 매주 랜덤 지정)
 5. 리뷰가 끝나면 main branch에 push합니다.
