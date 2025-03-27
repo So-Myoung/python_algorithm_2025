@@ -12,11 +12,10 @@ for _ in range(con):
 visited = [False] * (comNum + 1)  # 방문 기록
 q = [1]
 visited[1] = True
-cnt = 0
 
 
 def bfs():
-    global cnt
+    cnt = 0
     while q:
         cur = q.pop(0)
         for i in range(1, comNum + 1):
@@ -24,7 +23,7 @@ def bfs():
                 q.append(i)
                 visited[i] = True
                 cnt += 1
+    return cnt
 
 
-bfs()
-print(cnt)
+print(bfs())
