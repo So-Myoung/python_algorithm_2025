@@ -18,3 +18,6 @@ https://docs.google.com/spreadsheets/d/1uTgWAe7K-KXq7xn4ecy3Ab45MI6tOB6UA-yW33bM
 ### 코드 리뷰 규칙
 - 자유롭게 의견을 제시합니다.
 - 공격적이거나 기분이 상할 수 있는 말투를 사용하지 않습니다.
+---
+### 원본 글 링크
+https://github.com/Algorithm-ing/python_algorithm_2025
