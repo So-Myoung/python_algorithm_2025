@@ -20,7 +20,7 @@ for i in text:
 
         mirror_flag = True
         lists = []
-
+##
     elif i == " " and mirror_flag == True:
         lists.reverse()
         print(''.join(lists), end=" ")
