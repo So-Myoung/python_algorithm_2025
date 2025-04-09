@@ -10,8 +10,6 @@ for i in range(n-1):
     tree[a].append(b)
     tree[b].append(a)
 
-# print(tree)
-
 queue = deque([1])
 visited = [False] * (n+1)
 visited[1] = True
