@@ -1,22 +1,29 @@
+# 그냥 small로 풀면 너무 간단해서 large문제로 풀어봤습니다 large -> (22863번)
+# 최적화문제는 아직 ...
+
 from collections import defaultdict
 
 n,k = map(int,input().split())
 s = list(map(int, input().split()))
 d = list(map(int, input().split()))
 
+visited = [False] * n
+result = [0] * n
 
-# union find 로 풀어보자
-def union_find(step, i):
-    index = d[i]
-    for j in range(step):
-        index = d[index]
-        if index == i:
-            
-            break
-    return index
-
-
-
-visited = set()
 for i in range(n):
-    union_find(k-1, i)
+    if not visited[i]:
+        # 사이클 찾기
+        cycle = []
+        current = i
+        while not visited[current]:
+            visited[current] = True
+            cycle.append(current)
+            current = d[current] - 1
+        
+        cycle_len = len(cycle)
+        for idx in range(cycle_len):
+            new_idx = (idx + k) % cycle_len
+            # cycle[new_idx] = 들어가야하는자리
+            # cycle[idx] = 들어갈 숫자 from s
+            result[cycle[new_idx]] = s[cycle[idx]]
+print(*result)
