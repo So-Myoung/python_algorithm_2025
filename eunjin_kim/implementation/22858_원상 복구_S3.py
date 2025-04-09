@@ -11,7 +11,7 @@ for _ in range(k):
     seq = [0] * n
     for i in range(n):
         seq[d[i]-1] = s[i]
-    s = seq
+        s = seq
 
 print(*seq)
 
