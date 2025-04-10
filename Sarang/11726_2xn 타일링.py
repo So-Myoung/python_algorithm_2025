@@ -1,5 +1,6 @@
 import sys
 
+
 n = int(sys.stdin.readline())
 
 dp = [0]*(n+1)
